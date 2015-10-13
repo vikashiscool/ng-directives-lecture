@@ -3,11 +3,11 @@
 | Objectives |
 | :--- |
 | Explain when to use Angularjs directives. |
-| Find appropriate built-in directives through online resources. | 
+| Find appropriate built-in directives through online resources. |
 | Practice using common directives: |
 | ... alter data with `ng-click`. |
 | ... filter data in an `ng-repeat` with a custom filter. |
-| ... insert partial templates with custom directives. 
+| ... insert partial templates with custom directives.
 
 After you have cloned this repository, run npm install to download the necessary node modules.
 
@@ -15,7 +15,7 @@ After you have cloned this repository, run npm install to download the necessary
 npm install
 ```
 
-We will be using a separate `templates` folder to store our partial html files.  To access these files from our index.html and app.js files, we will need to serve our website instead of accessing it statically 
+We will be using a separate `templates` folder to store our partial html files.  To access these files from our index.html and app.js files, we will need to serve our website instead of accessing it statically
 
 
 ##Custom Directive Structure
@@ -52,3 +52,5 @@ To call this directive, simply use the **snake-case** of the directive name:
 5.  Include an image of the instructor within `instructor-namecard` using the provided image url. Hint: you can use angular here, too
 
 6.  Display the instructors starting from the lowest cohort number first.
+
+7. Lastly, let's display on each individual's namecard whether they are an Instructor or a Director in Residence.  
