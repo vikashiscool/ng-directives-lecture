@@ -13,8 +13,16 @@
 <body >
   <div ng-controller="Controller">
     <!--  Traverses $scope.students in app.js controller -->
-    <div ng-repeat="instructor in instructors">
-      {{instructor.name}} {{instructor.github}} {{instructor.cohort}} {{instructor.position}}
+    <div ng-repeat="instructor in instructors | orderBy: 'cohort'">
+      Name: {{instructor.name}} <br>
+      Github: <a href="https://github.com/{{instructor.github}}">{{instructor.github}}</a> <br>
+      <img ng-src="{{instructor.image}}"><br>
+      Cohort: {{instructor.cohort}}<br> 
+      Position: {{instructor.position}}<br>
+      Total occurrences of {{instructor.name}} saying the word "Automagic" <button ng-click="count = count + 1" ng-init="count=0">+1</button> {{count}} times.
+      <span ng-if="count>=10" class="animate-if">
+    <h3>{{instructor.name}} is a wizzy wizz!!</h3>
+</span>
     </div>
   </div>
 </body>
