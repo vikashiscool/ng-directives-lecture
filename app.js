@@ -40,10 +40,10 @@ angular.module('githubApp', [])
      cohort: 23,
    },
    {
-     name: 'Good Bedford',
-     github: 'goodbedford',
-     image: 'https://avatars1.githubusercontent.com/u/2454833?',
-     cohort: 22,
+     name: 'Matthew Villwock',
+     github: 'mtvillwock',
+     image: 'https://avatars2.githubusercontent.com/u/8475488?',
+     cohort: 23,
    },
    {
      name: 'Ben Hulan',
