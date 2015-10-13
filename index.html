@@ -8,18 +8,13 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="bower_components\angular\angular.min.js"></script>
   <script src="app.js"></script>
-
-
-
 </head>
+
 <body >
   <div ng-controller="Controller">
     <!--  Traverses $scope.students in app.js controller -->
-    <div ng-repeat="student in students | orderBy:orderProp">
-      <!-- Custom directives -->
-      <student-avatar></student-avatar>
-      <student-namecard></student-namecard>
-      <hr>
+    <div ng-repeat="instructor in instructors">
+      {{instructor.name}} {{instructor.github}} {{instructor.cohort}}
     </div>
   </div>
 </body>
