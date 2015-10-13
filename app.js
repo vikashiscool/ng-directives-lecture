@@ -70,33 +70,38 @@ angular.module('githubApp', [])
       name: 'Vikash Parekh',
       github: 'vikashiscool',
       image: 'https://avatars1.githubusercontent.com/u/9686256?v=3&s=460',
+      position: 'Developer In Residence',
       cohort: 21,
     },
     {
       name: 'Andrew Patzsch',
       github: 'mrpatzsch',
       image: 'https://avatars2.githubusercontent.com/u/10443141?v=3&s=460',
+      position: 'Developer In Residence',
       cohort: 21,
     },
     {
       name: 'Bedford Williamson',
       github: 'goodbedford',
       image: 'https://avatars1.githubusercontent.com/u/2454833?v=3&s=460',
+      position: 'Developer In Residence',
       cohort: 22,
     },
     {
       name: 'Ben Manning',
       github: 'ben-manning',
       image: 'https://avatars0.githubusercontent.com/u/8397980?v=3&s=460',
+      position: 'Instructor',
       cohort: 24,
     },
     {
       name: 'Travis Gaff',
       github: 'tgaff',
       image: 'https://avatars2.githubusercontent.com/u/1916144?v=3&s=460',
+      position: 'Developer In Residence',
       cohort: 23,
     }
   ];
-    $scope.orderProp = 'tenure';
+    $scope.orderProp = 'cohort';
   }])
 })(window.angular);
